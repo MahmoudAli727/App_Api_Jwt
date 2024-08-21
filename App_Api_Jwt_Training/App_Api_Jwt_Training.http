@@ -1,0 +1,6 @@
+@App_Api_Jwt_Training_HostAddress = http://localhost:5150
+
+GET {{App_Api_Jwt_Training_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

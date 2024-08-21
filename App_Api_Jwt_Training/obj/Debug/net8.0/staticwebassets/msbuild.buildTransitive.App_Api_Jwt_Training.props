@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\App_Api_Jwt_Training.props" />
+</Project>

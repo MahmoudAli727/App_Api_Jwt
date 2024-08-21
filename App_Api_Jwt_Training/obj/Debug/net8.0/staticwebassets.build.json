@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "dCGOt829T8syWEhwoewH+oIxaS78gthuU3RwQGnLBwI=",
+  "Source": "App_Api_Jwt_Training",
+  "BasePath": "_content/App_Api_Jwt_Training",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
