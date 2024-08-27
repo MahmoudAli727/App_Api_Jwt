@@ -52,7 +52,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddCustomJwtAuth(builder.Configuration);
 builder.Services.AddSwaggerGenJwtAuth();
-
+builder.Services.AddAutoMapper(typeof(Program));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

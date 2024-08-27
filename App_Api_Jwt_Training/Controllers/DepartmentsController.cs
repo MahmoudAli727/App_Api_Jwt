@@ -1,4 +1,6 @@
-﻿namespace App_Api_Jwt_Training.Controllers
+﻿using AutoMapper;
+
+namespace App_Api_Jwt_Training.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -7,10 +9,12 @@
     public class DepartmentsController : ControllerBase
     {
         private readonly IDepartmentService _departmentService;
+		private readonly IMapper _mapper;
 
-		public DepartmentsController(IDepartmentService IdepartmentService)
+		public DepartmentsController(IDepartmentService IdepartmentService, IMapper mapper)
         {
             _departmentService = IdepartmentService;
+			_mapper = mapper;
 		}
 
         //[CheckPermission(Permission.Read)]
@@ -41,9 +45,10 @@
                 var Dept = await _departmentService.GetDepartmentById(id);
                 if (Dept == null)
                 {
-                    return NotFound($"Yhis id {id} is not exist");
+                    return NotFound($"this id {id} is not exist");
                 }
-                var DeptDto = new DepartmentDto { Name = Dept.Name };
+                var DeptDto = _mapper.Map<DepartmentDto>(Dept);
+                    //new DepartmentDto { Name = Dept.Name };
                 return Ok(DeptDto);
             }catch(Exception ex)
             {
@@ -58,11 +63,12 @@
             {
                 try
                 {
-                    var newDept = new Department
-                    {
-                        Name = departmentDto.Name,
-                    };
-                    var dept=await _departmentService.AddNewDepartment(newDept);
+                    var newDept = _mapper.Map<Department>(departmentDto);
+					//    new Department
+					//{
+					//    Name = departmentDto.Name,
+					//};
+					var dept=await _departmentService.AddNewDepartment(newDept);
                     return Ok(dept);
                 }
                 catch(Exception ex)
@@ -81,10 +87,11 @@
         {
             if (ModelState.IsValid)
             {
-                 Department department = new Department();
-                 department.Name = departmentDto.Name;
-                try {
-                    var UpdateBool = await _departmentService.UpdateDepartment(id, department);
+                var dept = _mapper.Map<Department>(departmentDto);
+				 //Department department = new Department();
+				 //department.Name = departmentDto.Name;
+				try {
+                    var UpdateBool = await _departmentService.UpdateDepartment(id, dept);
                     if (!UpdateBool)
                     {
                         return NotFound($"this id {id} is not exist");
@@ -110,7 +117,7 @@
                 var DeptBool = await _departmentService.DeleteDepartment(id);
                 if (DeptBool == false)
                 {
-                    return NotFound($"Yhis id {id} is not exist");
+                    return NotFound($"this id {id} is not exist");
                 }
                 return Ok("Deleted Successfully");
             }catch(Exception ex)

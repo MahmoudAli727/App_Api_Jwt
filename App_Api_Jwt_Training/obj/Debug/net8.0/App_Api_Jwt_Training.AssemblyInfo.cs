@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("App_Api_Jwt_Training")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+987ad62810e3e4b157fd8314816fb1a967dc789c")]
 [assembly: System.Reflection.AssemblyProductAttribute("App_Api_Jwt_Training")]
 [assembly: System.Reflection.AssemblyTitleAttribute("App_Api_Jwt_Training")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

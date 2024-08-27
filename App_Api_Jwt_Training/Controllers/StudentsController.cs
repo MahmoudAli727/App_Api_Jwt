@@ -1,4 +1,7 @@
 ﻿
+using AutoMapper;
+using static System.Reflection.Metadata.BlobBuilder;
+
 namespace App_Api_Jwt_Training.Controllers
 {
     [Route("api/[controller]")]
@@ -8,16 +11,17 @@ namespace App_Api_Jwt_Training.Controllers
     public class StudentsController : ControllerBase
     {
         private readonly IStudentSevice _studentSevice;
+		private readonly IMapper _mapper;
+		public AppDbContext _appDbContext { get; }
 
-        public AppDbContext _appDbContext { get; }
+		public StudentsController(IStudentSevice studentSevice, AppDbContext appDbContext,IMapper mapper)
+		{
+			this._studentSevice = studentSevice;
+			_appDbContext = appDbContext;
+			_mapper = mapper;
+		}
 
-        public StudentsController(IStudentSevice studentSevice,AppDbContext appDbContext )
-        {
-            this._studentSevice = studentSevice;
-            _appDbContext = appDbContext;
-        }
-
-        [HttpGet("getAllStudents")]
+		[HttpGet("getAllStudents")]
         public async Task<IActionResult> GetAllDepartment()
         {
             try
@@ -39,7 +43,7 @@ namespace App_Api_Jwt_Training.Controllers
                 var student = await _studentSevice.GetStudentById(id);
                 if (student == null)
                 {
-                    return NotFound($"Yhis id {id} is not exist");
+                    return NotFound($"this id {id} is not exist");
                 }
                 return Ok(student);
             }
@@ -57,17 +61,19 @@ namespace App_Api_Jwt_Training.Controllers
                 try
                 {
                     using var stream = new MemoryStream();
-                    await studentDto.Image.CopyToAsync(stream);
-                    var newStudent = new Student
-                    {
-                        Name = studentDto.Name,
-                        Age = studentDto.Age,
-                        DeptId = studentDto.DeptId,
-                        Email = studentDto.Email,
-                        Password = studentDto.Password,
-                        Image = stream.ToArray(),
-                    };
-                    var std= await _studentSevice.AddNewStudent(newStudent);
+					await studentDto.Image.CopyToAsync(stream);
+                    var newStudent = _mapper.Map<Student>(studentDto);
+                    newStudent.Image = stream.ToArray();
+                    //    new Student
+                    //{
+                    //    Name = studentDto.Name,
+                    //    Age = studentDto.Age,
+                    //    DeptId = studentDto.DeptId,
+                    //    Email = studentDto.Email,
+                    //    Password = studentDto.Password,
+                    //    Image = stream.ToArray(),
+                    //};
+                    var std = await _studentSevice.AddNewStudent(newStudent);
                     if (std==null)
                     {
                         return BadRequest("wrong massage,tray again ");
@@ -89,12 +95,15 @@ namespace App_Api_Jwt_Training.Controllers
             {
                 try
                 {
-                    Student student = new Student();
-                    student.Name = studentDto.Name;
-                    student.Age = studentDto.Age;
-                    student.DeptId = studentDto.DeptId;
-                    student.Email = studentDto.Email;
-                    student.Password = studentDto.Password;
+                    Student student = _mapper.Map<Student>(studentDto);
+					
+                    //    new Student();
+					//student.Name = studentDto.Name;
+					//student.Age = studentDto.Age;
+					//student.DeptId = studentDto.DeptId;
+					//student.Email = studentDto.Email;
+					//student.Password = studentDto.Password;
+					
                     if (studentDto.Image != null)
                     {
                         using var stream = new MemoryStream();
@@ -103,11 +112,15 @@ namespace App_Api_Jwt_Training.Controllers
                     }
                     else
                     {
-                        student.Image = _appDbContext.students.FirstOrDefault(x => x.Id == id).Image;
+                        if (_appDbContext.students.FirstOrDefault(x => x.Id == id)==null)
+                        {
+                            return NotFound($"this id {id} is not exist");
+						}
+						student.Image = _appDbContext.students.FirstOrDefault(x => x.Id == id).Image;
                     }
                     var std = await _studentSevice.UpdateStudent(id,student);
                     if (std == false)
-                        return NotFound($"Yhis id {id} is not exist Or Deptid {studentDto.DeptId} is not exist");
+                        return NotFound($"this id {id} is not exist Or Deptid {studentDto.DeptId} is not exist");
                     return Ok("Updated Successfully");
                 }catch (Exception ex)
                 {
@@ -126,7 +139,7 @@ namespace App_Api_Jwt_Training.Controllers
                 var std = await _studentSevice.DeleteStudent(id);
                 if (std == false)
                 {
-                    return NotFound($"Yhis id {id} is not exist");
+                    return NotFound($"this id {id} is not exist");
                 }
                 return Ok("Deleted Successfully");
             }catch (Exception ex)

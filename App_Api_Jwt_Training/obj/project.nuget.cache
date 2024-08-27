@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "s9gjMDiEH3SKzjXXdXxot/XX1WmHjx0c94oebjx6J+tp7S+uCvUi+zEJ8943kxEd+RyZ3EfVbH5wBIPP5cQxBg==",
+  "dgSpecHash": "sXqSQp7fPokbQjjGgnCqybXxVu8hqx0A+t9AN9Vp2GpOu4oPuBQih5wM9q8E3lGAIl/F03VUoz4AbQVdTsXOTw==",
   "success": true,
   "projectFilePath": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\vip\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
