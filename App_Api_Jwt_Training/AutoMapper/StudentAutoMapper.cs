@@ -8,6 +8,7 @@ namespace App_Api_Jwt_Training.AutoMapper
         {
             CreateMap<StudentDto, Student>().
                ForMember(src => src.Image, opt => opt.Ignore());
+            CreateMap<Student, Student>();
         }
     }
 }

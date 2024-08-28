@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|c:\\users\\vip\\source\\repos\\app_api_jwt_training\\app_api_jwt_training\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|solutionrelative:app_api_jwt_training\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|c:\\users\\vip\\source\\repos\\app_api_jwt_training\\app_api_jwt_training\\data\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|solutionrelative:app_api_jwt_training\\data\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|c:\\users\\vip\\source\\repos\\app_api_jwt_training\\app_api_jwt_training\\automapper\\deptautomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|solutionrelative:app_api_jwt_training\\automapper\\deptautomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|c:\\users\\vip\\source\\repos\\app_api_jwt_training\\app_api_jwt_training\\validation\\studentdtovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|solutionrelative:app_api_jwt_training\\validation\\studentdtovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|c:\\users\\vip\\source\\repos\\app_api_jwt_training\\app_api_jwt_training\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|solutionrelative:app_api_jwt_training\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|c:\\users\\vip\\source\\repos\\app_api_jwt_training\\app_api_jwt_training\\automapper\\studentautomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|solutionrelative:app_api_jwt_training\\automapper\\studentautomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|c:\\users\\vip\\source\\repos\\app_api_jwt_training\\app_api_jwt_training\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|solutionrelative:app_api_jwt_training\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|c:\\users\\vip\\source\\repos\\app_api_jwt_training\\app_api_jwt_training\\validation\\userloginvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF695CB8-562F-4118-8020-871BED6EF16F}|App_Api_Jwt_Training\\App_Api_Jwt_Training.csproj|solutionrelative:app_api_jwt_training\\validation\\userloginvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,6 +24,20 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserLoginValidation.cs",
+              "DocumentMoniker": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\Validation\\UserLoginValidation.cs",
+              "RelativeDocumentMoniker": "App_Api_Jwt_Training\\Validation\\UserLoginValidation.cs",
+              "ToolTip": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\Validation\\UserLoginValidation.cs",
+              "RelativeToolTip": "App_Api_Jwt_Training\\Validation\\UserLoginValidation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T14:42:48.174Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
@@ -70,64 +76,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DeptAutoMapper.cs",
-              "DocumentMoniker": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\AutoMapper\\DeptAutoMapper.cs",
-              "RelativeDocumentMoniker": "App_Api_Jwt_Training\\AutoMapper\\DeptAutoMapper.cs",
-              "ToolTip": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\AutoMapper\\DeptAutoMapper.cs",
-              "RelativeToolTip": "App_Api_Jwt_Training\\AutoMapper\\DeptAutoMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T12:28:40.652Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DepartmentsController.cs",
-              "DocumentMoniker": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\Controllers\\DepartmentsController.cs",
-              "RelativeDocumentMoniker": "App_Api_Jwt_Training\\Controllers\\DepartmentsController.cs",
-              "ToolTip": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\Controllers\\DepartmentsController.cs",
-              "RelativeToolTip": "App_Api_Jwt_Training\\Controllers\\DepartmentsController.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAYwDkAAAAAAAAA",
+              "Title": "StudentDto.cs",
+              "DocumentMoniker": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\Data\\Dtos\\StudentDto.cs",
+              "RelativeDocumentMoniker": "App_Api_Jwt_Training\\Data\\Dtos\\StudentDto.cs",
+              "ToolTip": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\Data\\Dtos\\StudentDto.cs",
+              "RelativeToolTip": "App_Api_Jwt_Training\\Data\\Dtos\\StudentDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T12:26:42.209Z",
+              "WhenOpened": "2024-08-28T05:33:08.563Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentsController.cs",
-              "DocumentMoniker": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\Controllers\\StudentsController.cs",
-              "RelativeDocumentMoniker": "App_Api_Jwt_Training\\Controllers\\StudentsController.cs",
-              "ToolTip": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\Controllers\\StudentsController.cs",
-              "RelativeToolTip": "App_Api_Jwt_Training\\Controllers\\StudentsController.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAADMAAAAEAAAA",
+              "DocumentIndex": 1,
+              "Title": "StudentDtoValidation.cs",
+              "DocumentMoniker": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\Validation\\StudentDtoValidation.cs",
+              "RelativeDocumentMoniker": "App_Api_Jwt_Training\\Validation\\StudentDtoValidation.cs",
+              "ToolTip": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\Validation\\StudentDtoValidation.cs",
+              "RelativeToolTip": "App_Api_Jwt_Training\\Validation\\StudentDtoValidation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T12:08:50.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StudentAutoMapper.cs",
-              "DocumentMoniker": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\AutoMapper\\StudentAutoMapper.cs",
-              "RelativeDocumentMoniker": "App_Api_Jwt_Training\\AutoMapper\\StudentAutoMapper.cs",
-              "ToolTip": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\AutoMapper\\StudentAutoMapper.cs",
-              "RelativeToolTip": "App_Api_Jwt_Training\\AutoMapper\\StudentAutoMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T09:12:20.609Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\Program.cs",
-              "RelativeDocumentMoniker": "App_Api_Jwt_Training\\Program.cs",
-              "ToolTip": "C:\\Users\\vip\\source\\repos\\App_Api_Jwt_Training\\App_Api_Jwt_Training\\Program.cs",
-              "RelativeToolTip": "App_Api_Jwt_Training\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T06:24:27.204Z"
+              "WhenOpened": "2024-08-28T05:23:59.212Z",
+              "EditorCaption": ""
             }
           ]
         }

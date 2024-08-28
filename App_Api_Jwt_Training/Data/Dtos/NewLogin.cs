@@ -3,9 +3,9 @@ namespace App_Api_Jwt_Training.Data.Dtos
 {
     public class NewLogin
     {
-        [Required]
+        //[Required]
         public string Email { get; set; }
-        [Required]
+        //[Required]
         public string Password { get; set; }
     }
 }

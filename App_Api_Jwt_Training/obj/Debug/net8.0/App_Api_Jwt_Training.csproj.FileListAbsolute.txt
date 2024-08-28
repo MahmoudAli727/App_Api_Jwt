@@ -146,3 +146,6 @@ C:\Users\vip\source\repos\App_Api_Jwt_Training\App_Api_Jwt_Training\obj\Debug\ne
 C:\Users\vip\source\repos\App_Api_Jwt_Training\App_Api_Jwt_Training\obj\Debug\net8.0\ref\App_Api_Jwt_Training.dll
 C:\Users\vip\source\repos\App_Api_Jwt_Training\App_Api_Jwt_Training\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\vip\source\repos\App_Api_Jwt_Training\App_Api_Jwt_Training\obj\Debug\net8.0\App_Api_Jwt_Training.sourcelink.json
+C:\Users\vip\source\repos\App_Api_Jwt_Training\App_Api_Jwt_Training\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\vip\source\repos\App_Api_Jwt_Training\App_Api_Jwt_Training\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\vip\source\repos\App_Api_Jwt_Training\App_Api_Jwt_Training\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

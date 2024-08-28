@@ -1,14 +1,18 @@
 ﻿
+using AutoMapper;
+
 namespace App_Api_Jwt_Training.Srevices
 {
     public class StudentService : IStudentSevice
     {
         private readonly AppDbContext _appDbContext;
+		private readonly IMapper _mapper;
 
-        public StudentService(AppDbContext appContext)
+		public StudentService(AppDbContext appContext,IMapper mapper)
         {
             this._appDbContext = appContext;
-        }
+			_mapper = mapper;
+		}
 
         public async Task<Student> AddNewStudent(Student std)
         {
@@ -17,14 +21,13 @@ namespace App_Api_Jwt_Training.Srevices
             {
                 return null;
             }
-            var student = new Student {
-                    DeptId = std.DeptId,
-                    Email = std.Email,
-                    Age = std.Age,
-                    Name = std.Name,
-                    Image = std.Image,
-                    Password = std.Password,
-                };
+            var student = _mapper.Map<Student>(std);
+                //new Student {
+                //    DeptId = std.DeptId,
+                //    Age = std.Age,
+                //    Name = std.Name,
+                //    Image = std.Image,
+                //};
             
             await _appDbContext.students.AddAsync(student);
             await _appDbContext.SaveChangesAsync();
@@ -73,11 +76,9 @@ namespace App_Api_Jwt_Training.Srevices
                 return false;
             }
             student.DeptId = std.DeptId;
-            student.Email = std.Email;
             student.Age = std.Age;
             student.Name = std.Name;
             student.Image = std.Image;
-            student.Password = std.Password;
             student.Image = std.Image;
             _appDbContext.students.Update(student);
             await _appDbContext.SaveChangesAsync();

@@ -94,7 +94,7 @@ namespace App_Api_Jwt_Training.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("", "User Name is invalid");
+                    ModelState.AddModelError("Error", "User Name is invalid");
                 }
             }
             return BadRequest(ModelState);

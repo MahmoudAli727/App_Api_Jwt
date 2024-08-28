@@ -1,4 +1,4 @@
-
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,16 +42,17 @@ builder.Services.AddTransient<IStudentSevice, StudentService>();
 
 builder.Services.AddControllers(option =>
 {
-     //option.Filters.Add<LogActivityFilter>();
-     ////option.Filters.Add<PermissionBaseAuthorizationFilter>();
-     //option.Filters.Add<LogSensitiveActionAttribute>();
-});
+    //option.Filters.Add<LogActivityFilter>();
+    ////option.Filters.Add<PermissionBaseAuthorizationFilter>();
+    //option.Filters.Add<LogSensitiveActionAttribute>();
+}).AddFluentValidation(validate => validate.RegisterValidatorsFromAssemblyContaining<Program>());
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddCustomJwtAuth(builder.Configuration);
 builder.Services.AddSwaggerGenJwtAuth();
+
 builder.Services.AddAutoMapper(typeof(Program));
 var app = builder.Build();
 
